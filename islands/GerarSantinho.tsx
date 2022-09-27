@@ -43,18 +43,18 @@ export default function GerarSantinho({ candidatos, uf }: Props) {
   const [canvas, setCanvas] = useState<HTMLCanvasElement | null>(null);
   const infosCandidatos = [
     {
-      numeroDefault: "?????",
-      yNome: 175 + 60,
-      yNumero: 320 + 65,
-      ...(candidatos.deputadoestadual || candidatos.deputadodistrital),
-      yImage: 225,
-    },
-    {
       numeroDefault: "????",
       yNome: 525 + 50,
       yNumero: 670 + 45,
       ...candidatos.deputadofederal,
       yImage: 556,
+    },
+    {
+      numeroDefault: "?????",
+      yNome: 175 + 60,
+      yNumero: 320 + 65,
+      ...(candidatos.deputadoestadual || candidatos.deputadodistrital),
+      yImage: 225,
     },
     {
       numeroDefault: "???",
